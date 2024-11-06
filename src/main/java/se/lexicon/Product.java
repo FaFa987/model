@@ -1,31 +1,26 @@
 package se.lexicon;
 
-public class Product {
+public abstract class Product {
+
     private int id;
+    private String productName;
     private double price;
-    private String ptoductName;
-    public Product(int id, double price, String ptoductName) {
+
+    public Product(int id , String productName , double price) {
         this.id = id;
+        this.productName = productName;
         this.price = price;
-        this.ptoductName = ptoductName;
     }
-    public int getId() {
-        return id;
+
+    public String getProductName() {
+        return productName;
     }
     public double getPrice() {
         return price;
     }
-    public String getPtoductName() {
-        return ptoductName;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
     public String productInfo(){
-        return "you chose: " + ptoductName + ", price: " + price;
+        return "Item: " + productName + ", price: " + price;
     }
 
 }
