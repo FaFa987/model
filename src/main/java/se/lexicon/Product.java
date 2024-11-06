@@ -18,6 +18,7 @@ public abstract class Product {
     public double getPrice() {
         return price;
     }
+    public abstract double calculatePrice();
 
     public String productInfo(){
         return "Item: " + productName + ", price: " + price;

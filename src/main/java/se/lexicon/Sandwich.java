@@ -1,20 +1,25 @@
 package se.lexicon;
 
-public class Sandwich extends Product{
+public final class Sandwich extends Product{
 
-    private String size;
+    private String type;
     private boolean cheese;
 
-    public Sandwich(int id, String productName, double price, String size, boolean cheese) {
+    public Sandwich(int id, String productName, double price, String type, boolean cheese) {
         super(id, productName, price);
-        this.size = size;
+        this.type = type;
         this.cheese = cheese;
     }
-    public String getSize() {
-        return size;
+
+    @Override
+    public double calculatePrice() {
+        return super.getPrice() * 0.1;
     }
 
-    public String orderSandwich(){
-        return "Your Order: " + productInfo() + " size: " + size;
+    @Override
+    public String productInfo() {
+        return super.productInfo();
     }
 }
+
+
