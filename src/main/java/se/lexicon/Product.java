@@ -6,6 +6,7 @@ public abstract class Product {
     private String productName;
     private double price;
 
+
     public Product(int id , String productName , double price) {
         this.id = id;
         this.productName = productName;
@@ -18,7 +19,9 @@ public abstract class Product {
     public double getPrice() {
         return price;
     }
-    public abstract double calculatePrice();
+    public abstract String examine();
+    public abstract String use();
+
 
     public String productInfo(){
         return "Item: " + productName + ", price: " + price;

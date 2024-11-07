@@ -8,7 +8,7 @@ public class Main {
         //Product p1 = new Product(1,"popcorn", 2.5);
         //Product p2 = new Product(2,"pepsi", 3.0);
         //p2.
-        Sandwich sandwich = new Sandwich(100, "chicken" ,21.5, "M", true);
+        Sandwich sandwich = new Sandwich(10,"hamburge",25);
         //System.out.println(sandwich.orderSandwich());
         //System.out.println(sandwich.toString());
         //System.out.println(sandwich);
