@@ -20,10 +20,11 @@ public abstract class Product {
         return price;
     }
     public abstract String examine();
+
     public abstract String use();
 
 
-    public String productInfo(){
+    public String getDescription(){
         return "Item: " + productName + ", price: " + price;
     }
 

@@ -45,6 +45,6 @@ public final class Snacks extends Product {
 
     @Override
     public String productInfo() {
-        return super.productInfo();
+        return super.getDescription();
     }
 }
