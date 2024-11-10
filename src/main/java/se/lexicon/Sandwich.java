@@ -20,9 +20,15 @@ public final class Sandwich extends Product{
     }
 
     @Override
-    public String getDescription() {
-        return "Sandwich: " + getProductName() + ", Regular: " + regular + ", Price: " + getPrice();
+    public String toString() {
+        return super.toString();
     }
+
+    @Override
+    public String getDescription() {
+        return super.getDescription() + " Regular: " + regular;
+    }
+
 }
 
 

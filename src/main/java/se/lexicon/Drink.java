@@ -20,6 +20,6 @@ public final class Drink extends Product {
 
     @Override
     public String getDescription() {
-        return "Drink: " + getProductName() + (isDiet ? ", Diet" : "") + ", Price: " + getPrice();
+        return super.getDescription() + " isDiet:" + isDiet;
     }
 }

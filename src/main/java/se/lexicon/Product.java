@@ -23,6 +23,12 @@ public abstract class Product {
 
     public abstract String use();
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                '}';
+    }
 
     public String getDescription(){
         return "Item: " + productName + ", price: " + price;
