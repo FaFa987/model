@@ -3,8 +3,8 @@ package se.lexicon;
 public final class Drink extends Product {
     private boolean isDiet;
 
-    public Drink(String id, String name, int price, boolean isDiet) {
-        super(Integer.parseInt(id), name, price);
+    public Drink(int id, String name, int price, boolean isDiet) {
+        super(id, name, price);
         this.isDiet = isDiet;
     }
 
@@ -20,6 +20,6 @@ public final class Drink extends Product {
 
     @Override
     public String getDescription() {
-        return "Drink: " + getProductName() + (isDiet ? ", Diet" : "") + ", Price: " + getPrice() + " cents";
+        return "Drink: " + getProductName() + (isDiet ? ", Diet" : "") + ", Price: " + getPrice();
     }
 }

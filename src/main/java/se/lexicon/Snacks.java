@@ -21,6 +21,6 @@ public final class Snacks extends Product {
 
     @Override
     public String getDescription() {
-        return "Snacks: " + getProductName() + ", Flavor: " + flavor + ", Price: " + getPrice() + " cents";
+        return "Snacks: " + getProductName() + ", Flavor: " + flavor + ", Price: " + getPrice();
     }
 }
