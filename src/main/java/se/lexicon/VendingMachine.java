@@ -2,11 +2,10 @@ package se.lexicon;
 
 public interface VendingMachine {
 
-    public void addCurrency(String amount);
-    public int getBalance();
-    public Product request(int id);
-    public int endSession();
-    public String getDescription(int id);
-    public String getProductName();
-
+    void addCurrency(int amount); // Add money to the deposit pool
+    void request(String productId); // Buy a requested product if enough money is provided
+    void endSession(); // End session and return the money
+    String getDescription(String productId); // Get product description
+    int getBalance(); // Get the current balance of money in the deposit pool
+    String[] getProducts(); // Get list of all available products
 }
